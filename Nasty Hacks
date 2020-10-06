@@ -1,0 +1,13 @@
+x = int(input())
+
+for _ in range(x):
+    y = input().split(" ")
+    revenuenoadvert = int(y[0])
+    revenueadvert = int(y[1])
+    advertcost = int(y[2])
+    if revenuenoadvert + advertcost > revenueadvert:
+        print("do not advertise")
+    elif revenuenoadvert + advertcost == revenueadvert:
+        print("does not matter")
+    elif revenuenoadvert+advertcost<revenueadvert:
+        print("advertise")
